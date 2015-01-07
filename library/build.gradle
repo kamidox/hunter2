@@ -2,17 +2,16 @@ apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 17
-    buildToolsVersion "19.1.0"
+    buildToolsVersion "21.1.2"
 
     defaultConfig {
-        applicationId "com.squareup.timessquare"
         minSdkVersion 8
         targetSdkVersion 17
     }
 
     buildTypes {
         release {
-            runProguard false
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
